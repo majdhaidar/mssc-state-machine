@@ -30,6 +30,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// https://mvnrepository.com/artifact/org.springframework.statemachine/spring-statemachine-core
+	implementation group: 'org.springframework.statemachine', name: 'spring-statemachine-core', version: '4.0.0'
+
 }
 
 tasks.named('bootBuildImage') {
